@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing: border-box;
+}
+
+.btn{
+position:fixed;
+top:50px;
+left:30%;
+font-size: 15px;
+transform: translate(-50%,-50%);
+background-color: #005f61 !important;
+margin-bottom: 15px;
+font-weight: 600;
+padding:15px 20px;
+color: white;
+cursor: pointer;
+}
+.text-cin{
+position:fixed;
+top:40%;
+left:50%;
+transform: translate(-50%,-50%);
+
+}
+
+#text-cin{
+padding: 5px;
+outline: none;
+border: solid ;
+}
+
+.cardFront {
+background-color: #FFF;
+position: relative;
+width: 86mm;
+height: 55mm;
+border-radius: 5px;
+margin-bottom: 20px;
+background-image: url('/assets/card.jpg');
+background-position: center;
+background-size: cover;
+
+}
+.logo{
+width: 40%;
+position: absolute;
+left: 20px;
+top: 20px;
+}
+.logo-right{
+height: 100%;	
+position: absolute;
+right: 0px;
+top: 0px;
+}
+.logo-center{
+width: 58%;	
+position: absolute;
+left: 20px;
+top: 50%;
+transform: translateY(-50%);
+}
+.text{
+position: absolute;
+left: 20px;
+bottom: 20px;
+}
+.text>div{
+text-transform: uppercase;
+color: #FFF;
+font-family: monospace;
+font-size: larger;
+font-weight: bold;
+}
