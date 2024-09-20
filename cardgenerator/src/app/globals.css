@@ -36,7 +36,6 @@ border: solid ;
 }
 
 .cardFront {
-background-color: #FFF;
 position: relative;
 width: 86mm;
 height: 55mm;
@@ -78,3 +77,21 @@ font-family: monospace;
 font-size: larger;
 font-weight: bold;
 }
+
+
+/* @media print {
+  @page {
+    size: 55mm 86mm landscape !important;
+   
+  }
+  .cardFront { 
+    position: relative;
+    width: 86mm;
+    height: 55mm;
+    border-radius: 5px;
+    background-image: url('/assets/card.jpg');
+    background-position: center;
+    background-size: cover;
+  
+  }	
+} */
