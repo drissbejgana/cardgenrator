@@ -1,6 +1,4 @@
-import Image from "next/image";
 import CardVip from '../components/CardVipGenerator'
-import CreateCard from "@/components/CreateCard";
 
 export default function Home() {
   return (

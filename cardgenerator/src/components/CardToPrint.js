@@ -1,4 +1,5 @@
 'use client'
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 
@@ -39,14 +40,16 @@ function handlePrev(){
 
     return (
       <>
-          <div ref={ref} > 
+          <div ref={ref} className="border border-1" > 
         { cards.map((item,index)=>{ //?.slice(min,max)
-          return <div key={index}  className='cardFront' >
+          return <Link key={index} href={{ pathname: '/cards', query: { gender:item.Gen,prenom:item.Prénom,nom:item.Nom,cin:item.Cin} } } >
+                     <div   className='cardFront' >
                     <div className="text">
                       <div>{item.Gen} {item.Prénom} {item.Nom}</div>
                       <div>{item.Cin}</div>
                     </div>
-                </div>
+                </div> 
+                </Link>
         })    
               
             }
